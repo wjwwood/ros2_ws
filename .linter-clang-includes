@@ -1,0 +1,16 @@
+/usr/local/include/opensplice/dcps/C++/SACPP
+/usr/local/include/opensplice/sys
+/usr/local/include/opensplice/include
+/usr/local/include/opensplice
+%p/src/ros2/rcl/rcl/include
+%p/src/ros2/rclc/rclc/include
+%p/src/ros2/rclcpp/rclcpp/include
+%p/src/ros2/rmw/rmw/include
+%p/src/ros2/rmw_opensplice/rmw_opensplice_cpp/include
+%p/src/ros2/rmw_opensplice/rosidl_typesupport_opensplice_cpp/include/rosidl_typesupport_opensplice_cpp/impl
+%p/src/ros2/rmw_opensplice/rosidl_typesupport_opensplice_cpp/include
+%p/src/ros2/rmw_connext/rosidl_typesupport_connext_cpp/include
+%p/src/ros2/rosidl/rosidl_generator_c/include
+%p/src/ros2/rosidl/rosidl_generator_cpp/include
+%p/src/ros2/rosidl_dds/rosidl_typesupport_introspection_cpp/include
+%p/install/include

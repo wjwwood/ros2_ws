@@ -1,0 +1,3 @@
+- option to hold without copy rather than malloc and copy for things like node name, topic name, ect.
+- thread-safe vs no alloc trade off in error handling
+- change wait to be clear about concurrency

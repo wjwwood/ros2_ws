@@ -1,0 +1,51 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/william/Downloads/Libc-1044.40.1"
+		},
+		{
+			"path": "/Users/william/Downloads/libauto-186"
+		}
+	],
+	"settings":
+	{
+		"sublimeclang_options":
+		[
+			"-I/Users/william/RTI/ndds.5.1.0/include",
+			"-I/Users/william/RTI/ndds.5.1.0/include/ndds",
+			"-DRTI_UNIX",
+			"-I/usr/local/include",
+			"-I/usr/local/include/opensplice/dcps/C++/SACPP",
+			"-I/usr/local/include/opensplice/sys",
+			"-I/usr/local/include/opensplice/include",
+			"-I/usr/local/include/opensplice",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcl/rcl/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclc/rclc/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclcpp/rclcpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw/rmw/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_opensplice/rmw_opensplice_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_opensplice/rosidl_typesupport_opensplice_cpp/include/rosidl_typesupport_opensplice_cpp/impl",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_opensplice/rosidl_typesupport_opensplice_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_connext/rmw_connext_shared_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_connext/rosidl_typesupport_connext_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/eprosima/ROS-RMW-Fast-RTPS-cpp/rmw_fastrtps_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rosidl/rosidl_generator_c/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rosidl/rosidl_generator_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rosidl_dds/rosidl_typesupport_introspection_cpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/demos/intra_process_comms/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/install/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/install/src/ament_cmake_gmock/googlemock-1.7.0/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/build/test_rclcpp/rosidl_generator_cpp",
+			"-I${folder:${project_path:ros2.sublime-project}}/build/test_communication/rosidl_generator_cpp",
+			"-I/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1",
+			"-I/usr/local/include",
+			"-I/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/include",
+			"-I/Library/Developer/CommandLineTools/usr/include",
+			"-I/usr/include"
+		]
+	}
+}
