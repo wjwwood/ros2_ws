@@ -3,12 +3,6 @@
 	[
 		{
 			"path": "."
-		},
-		{
-			"path": "/Users/william/Downloads/Libc-1044.40.1"
-		},
-		{
-			"path": "/Users/william/Downloads/libauto-186"
 		}
 	],
 	"settings":
@@ -41,11 +35,11 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/install/src/ament_cmake_gmock/googlemock-1.7.0/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/build/test_rclcpp/rosidl_generator_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/build/test_communication/rosidl_generator_cpp",
-			"-I/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1",
-			"-I/usr/local/include",
-			"-I/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/include",
-			"-I/Library/Developer/CommandLineTools/usr/include",
-			"-I/usr/include"
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1",
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include",
+			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include",
+			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks",
 		]
 	}
 }
