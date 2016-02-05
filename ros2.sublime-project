@@ -21,6 +21,7 @@
 			"-I/usr/local/include/opensplice/sys",
 			"-I/usr/local/include/opensplice/include",
 			"-I/usr/local/include/opensplice",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ament/ament_index/ament_index_cpp/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcl/rcl/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclc/rclc/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclcpp/rclcpp/include",
