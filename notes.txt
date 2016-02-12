@@ -1,3 +1,57 @@
 - option to hold without copy rather than malloc and copy for things like node name, topic name, ect.
 - thread-safe vs no alloc trade off in error handling
 - change wait to be clear about concurrency
+
+Notes for things to follow up on in Alpha 5
+===========================================
+
+- Enable rcl and C type support tests for Connext dynamic and FastRTPS (typesupport_introspection).
+- Create comprehensive system tests using C type support and rcl for all message types.
+- rcl
+  - Add graph API functions (count subscriptions, etc)
+    - And then fix rcl tests so they use this rather than sleeping before publishing.
+  - Fix test which randomly gets a double free.
+    - Only happens with the subscription and publisher tests which pub/sub a string and only with Connext.
+    - I think it is an ownership problem where both std_msgs__msg__String__fini and Connext free the same string.
+  - Consider sharing multi rmw implementation CMake infrastructure with rclcpp.
+  - Finish implementing tests.
+    - publisher.c and subscription.c need to be looked over but are mostly completely tested.
+    - guard_condition.c, timer.c, and wait.c need to be tested still.
+- rmw
+  - Refactor to mimic rcl in some ways:
+    - Have the user (probably `rcl`) allocate memory for handles:
+      - `<T>_init(<T> *, ...) -> ret_code` rather than `<T>_create(...) -> T *` functions
+    - Create allocator struct and pass it to all functions which are allowed to allocate memory.
+    - Move system and steady clock implementations in rmw so rmw implementations can use them.
+  - Vastly improve documentation:
+    - Detailed documentation for each function and type.
+    - Use specific error codes (rather than just RMW_RET_OK and RMW_RET_ERROR).
+    - Consider thread safety for each function.
+    - Consider memory allocation and data ownership for each function.
+    - Find a way to present our rcl and rmw documentation along side implementation notes (traceability).
+      - For example, reading about rcl_wait should have an obvious link to rmw_wait, which somehow should allow rmw implementations to leave notes about the memory allocation or thread safety.
+  - Differentiate the rmw identifier and rosidl identifier.
+    - Currently for OpenSplice and Connext static they are the same string, but are different pointers.
+- Move memory tools, ScopeExit, and some other commonly useful things to a low level common package.
+- Revisit initialization of fields in messages.
+  - Currently we only set values of fields explicitly (in constructors) if the user provides a default value.
+    - I think it would be good to set them to a default value based on the type if the user does not give a default.
+    - This would make it less likely that unintentional (and random) values are sent over the wire.
+    - Also it removes some ambiguity in Python where uninitialized members are None and therefore don't even match the type of the field.
+- Type support system:
+  - Generally:
+    - Change type support identifiers so that there is a distinction between C and C++ and that they are consistent.
+      - Currently OpenSplice and Connext static use the same type support id for C and C++.
+      - Type support introspection has one for C and one for C++ and the rmw implementations
+        have to allow either.
+    - Needs to be cleaned, with common boiler plate abstracted into concepts.
+    - Specifically, try to make dependencies between message generators more explicit.
+      - That includes building up the order in which they run,
+      - as well as the artifacts they share with each other.
+    - I think it would be good to make it so that message generation could be used separately from our infrastructure.
+      - For example, DDS, Protobuf, and the like have stand alone tools which generate code with CLI options.
+        - By itself this isn't useful, but it is useful to people wanting to use our message generation outside our CMake infrastructure.
+        - It is also something we could dog food in our infrastructure and may make it easier for testing locally.
+  - Specifically for OpenSplice (may also apply to Connext static):
+    - Refactor so that the C type support package does most of the work and the C++ one only extends that.
+      - Currently it is backwards, C++ does most of the work and C just extends.
