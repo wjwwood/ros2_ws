@@ -32,6 +32,8 @@ Notes for things to follow up on in Alpha 5
       - For example, reading about rcl_wait should have an obvious link to rmw_wait, which somehow should allow rmw implementations to leave notes about the memory allocation or thread safety.
   - Differentiate the rmw identifier and rosidl identifier.
     - Currently for OpenSplice and Connext static they are the same string, but are different pointers.
+- Refactor rmw's error handling code to allow other entities to pass their own error storage (like rcl).
+  - This will allow rcl to have separate storage from rmw, but reuse the same logic.
 - Move memory tools, ScopeExit, and some other commonly useful things to a low level common package.
 - Revisit initialization of fields in messages.
   - Currently we only set values of fields explicitly (in constructors) if the user provides a default value.
