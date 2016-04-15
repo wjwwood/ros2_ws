@@ -6,6 +6,9 @@
 		},
 		{
 			"path": "/Users/william/dev/opensplice"
+		},
+		{
+			"path": "/Applications/rti_connext_dds-5.2.0/include"
 		}
 	],
 	"settings":
@@ -17,8 +20,8 @@
 			"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include",
 			"-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks",
-			"-I/Users/william/RTI/ndds.5.1.0/include",
-			"-I/Users/william/RTI/ndds.5.1.0/include/ndds",
+			"-I/Applications/rti_connext_dds-5.2.0/include",
+			"-I/Applications/rti_connext_dds-5.2.0/include/ndds",
 			"-DRTI_UNIX",
 			"-I/usr/local/include",
 			"-I/usr/local/include/opensplice/dcps/C/SAC",
@@ -52,7 +55,7 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/test_communication/rosidl_generator_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/install_isolated/**",
 			"-I/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/include/python3.5m",
-			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_opensplice_cpp",
+			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_opensplice_cpp"
 		]
 	}
 }
