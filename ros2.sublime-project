@@ -37,6 +37,7 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcl/rcl/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclc/rclc/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclcpp/rclcpp/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclcpp/rclcpp_lifecycle/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw/rmw/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_connext/rmw_connext_shared_cpp/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rmw_connext/rosidl_typesupport_connext_cpp/include",
