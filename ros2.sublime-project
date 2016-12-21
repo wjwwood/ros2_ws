@@ -2,6 +2,9 @@
 	"folders":
 	[
 		{
+			"path": "src/ros2/examples/rclcpp/empty_node"
+		},
+		{
 			"path": "."
 		},
 		{
