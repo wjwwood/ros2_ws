@@ -1,0 +1,9 @@
+touch ./src/ros2/common_interfaces/actionlib_msgs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/nav_msgs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/shape_msgs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/std_srvs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/stereo_msgs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/trajectory_msgs/AMENT_IGNORE
+touch ./src/ros2/common_interfaces/visualization_msgs/AMENT_IGNORE
+touch ./src/ros2/rmw_connext/rmw_connext_dynamic_cpp/AMENT_IGNORE
+touch ./src/ros2/rmw_opensplice/AMENT_IGNORE
