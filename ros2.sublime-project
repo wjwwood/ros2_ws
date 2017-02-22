@@ -69,7 +69,8 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/example_interfaces/rosidl_typesupport_connext_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/rosidl_generator_cpp/rosidl_generator_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/install_isolated/**",
-			"-I/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/include/python3.5m",
+			"-I/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/include/python3.6m",
+			"-I/Users/william/kinetic/install/include",
 			"-DPACKAGE_NAME=examples_empty_node",
 			"-DNODE_CLASS_NAME=EmptyNode",
 			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_fastrtps_cpp"
