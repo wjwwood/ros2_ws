@@ -8,9 +8,6 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/william/dev/opensplice"
-		},
-		{
 			"path": "/Applications/rti_connext_dds-5.2.0/include"
 		}
 	],
@@ -70,10 +67,11 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/rosidl_generator_cpp/rosidl_generator_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/install_isolated/**",
 			"-I/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/include/python3.6m",
-			"-I/Users/william/kinetic/install/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/map_server_ws/src/navigation/map_server/include",
 			"-DPACKAGE_NAME=examples_empty_node",
 			"-DNODE_CLASS_NAME=EmptyNode",
-			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_fastrtps_cpp"
+			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_fastrtps_cpp",
+			"-DHAVE_YAMLCPP_GT_0_5_0=1"
 		]
 	}
 }
