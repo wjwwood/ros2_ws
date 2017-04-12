@@ -1,5 +1,5 @@
 touch ./src/ros2/common_interfaces/actionlib_msgs/AMENT_IGNORE
-touch ./src/ros2/common_interfaces/nav_msgs/AMENT_IGNORE
+#touch ./src/ros2/common_interfaces/nav_msgs/AMENT_IGNORE
 touch ./src/ros2/common_interfaces/shape_msgs/AMENT_IGNORE
 touch ./src/ros2/common_interfaces/std_srvs/AMENT_IGNORE
 touch ./src/ros2/common_interfaces/stereo_msgs/AMENT_IGNORE
