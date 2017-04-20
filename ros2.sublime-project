@@ -35,6 +35,8 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/src/eprosima/ROS-RMW-Fast-RTPS-cpp/rmw_fastrtps_cpp/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/demos/image_tools/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/demos/intra_process_comms/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/c_utilities/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcutils/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcl/rcl/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rcl/rcl_lifecycle/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/rclc/rclc/include",
