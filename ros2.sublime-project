@@ -70,6 +70,7 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/example_interfaces/rosidl_typesupport_connext_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/rosidl_generator_cpp/rosidl_generator_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/install_isolated/**",
+			"-I${folder:${project_path:ros2.sublime-project}}/install_isolated_connext/**",
 			"-I/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/include/python3.6m",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/navigation/map_server/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/vendor/cartographer",
