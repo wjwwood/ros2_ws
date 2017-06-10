@@ -6,7 +6,7 @@ ros_core_documentation
 *-workspace
 *.png
 *.DS_Store
-ros2.repos
+*.repos
 backups
 doxygen_tag_files
 build_*
