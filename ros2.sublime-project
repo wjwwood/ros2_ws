@@ -2,9 +2,6 @@
 	"folders":
 	[
 		{
-			"path": "src/ros2/examples/rclcpp/empty_node"
-		},
-		{
 			"path": "."
 		},
 		{
@@ -78,7 +75,6 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ros2/navigation/map_server/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/vendor/cartographer",
 			"-I/usr/local/opt/eigen/include/eigen3",
-			// "-I/Users/william/kinetic/install/include",
 			"-DPACKAGE_NAME=examples_empty_node",
 			"-DNODE_CLASS_NAME=EmptyNode",
 			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_fastrtps_cpp",
