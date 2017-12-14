@@ -18,11 +18,6 @@
 			"-I/Applications/rti_connext_dds-5.2.0/include/ndds",
 			"-DRTI_UNIX",
 			"-I/usr/local/include",
-			// "-I/usr/local/include/opensplice/dcps/C/SAC",
-			// "-I/usr/local/include/opensplice/dcps/C++/SACPP",
-			// "-I/usr/local/include/opensplice/sys",
-			// "-I/usr/local/include/opensplice/include",
-			// "-I/usr/local/include/opensplice",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ament/ament_index/ament_index_cpp/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/ament/gmock_vendor/vendor/googlemock-1.7.0/include",
 			"-I${folder:${project_path:ros2.sublime-project}}/src/eprosima/Fast-RTPS/include",
@@ -59,17 +54,18 @@
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/example_interfaces/rosidl_typesupport_connext_c",
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/example_interfaces/rosidl_typesupport_connext_cpp",
 			"-I${folder:${project_path:ros2.sublime-project}}/build_isolated/rosidl_generator_cpp/rosidl_generator_cpp",
-			// "-I${folder:${project_path:ros2.sublime-project}}/install_isolated/**",
-			// "-I${folder:${project_path:ros2.sublime-project}}/install_isolated_connext/**",
-			// "-I${folder:${project_path:ros2.sublime-project}}/install_connext/**",
-			// "-I/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/include/python3.6m",
-			// "-I${folder:${project_path:ros2.sublime-project}}/src/ros2/navigation/map_server/include",
-			// "-I${folder:${project_path:ros2.sublime-project}}/src/vendor/cartographer",
 			"-I/usr/local/opt/eigen/include/eigen3",
 			"-DPACKAGE_NAME=examples_empty_node",
 			"-DNODE_CLASS_NAME=EmptyNode",
 			"-DRMW_IMPLEMENTATION_SUFFIX=rmw_fastrtps_cpp",
-			"-DHAVE_YAMLCPP_GT_0_5_0=1"
+			"-DHAVE_YAMLCPP_GT_0_5_0=1",
+			"-I/usr/local/opt/qt/include",
+			"-I/usr/local/opt/qt/Frameworks/QtCore.framework/Versions/Current/Headers",
+			"-I/usr/local/opt/qt/Frameworks/QtGui.framework/Versions/Current/Headers",
+			"-I/usr/local/opt/qt/Frameworks/QtWidgets.framework/Versions/Current/Headers",
+			"-I${folder:${project_path:ros2.sublime-project}}/install/opt/rviz_ogre_vendor/include",
+			"-I${folder:${project_path:ros2.sublime-project}}/install/opt/rviz_ogre_vendor/include/OGRE",
+			"-I${folder:${project_path:ros2.sublime-project}}/install/opt/rviz_ogre_vendor/include/OGRE/Overlay"
 		]
 	}
 }
